@@ -42,13 +42,13 @@ A interface foi projetada com foco em **usabilidade, velocidade e experiência d
 
 ### 1. Clonar o repositório  
 git clone https://github.com/seu-usuario/cep-facil.git
-2. Acessar o diretório do projeto
+### 2. Acessar o diretório do projeto
 cd cep-facil
-3. Instalar as dependências
+### 3. Instalar as dependências
 npm install
-4. Rodar o projeto localmente
+### 4. Rodar o projeto localmente
 npm run dev
-5. Acessar no navegador
+### 5. Acessar no navegador
 O Vite exibirá a URL local, geralmente:
 http://localhost:5173
 
