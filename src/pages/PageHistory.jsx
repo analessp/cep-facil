@@ -53,14 +53,14 @@ export default function PageHistory() {
           {historico.map((item, index) => (
             <div key={index} style={styles.historicoItem}>
               <div style={styles.historicoIcon}>
-                <MapPin size={20} color="#22d3ee" />
+                <MapPin size={20} color='white' />
               </div>
               <div style={styles.historicoInfo}>
                 <p style={styles.historicoCep}>{item.cep}</p>
                 <p style={styles.historicoEndereco}>{item.endereco}</p>
                 <p style={styles.historicoData}>
                   {new Date(item.data).toLocaleDateString('pt-BR')} às{''}
-                  {new Date(item.data).toLocaleDateString('pt-BR', {
+                  {new Date(item.data).toLocaleTimeString('pt-BR', {
                     hour: '2-digit',
                     minute: '2-digit'
                   })}

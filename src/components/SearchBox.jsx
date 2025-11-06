@@ -11,7 +11,7 @@ export default function SearchBox() {
   const formatCEP = (value) => {
     const nums = value.replace(/\D/g, '');
     if (nums.length <= 5) return nums;
-    return `${nums.slice(0,5)}-{nums.slice(5,8)}`;
+    return `${nums.slice(0,5)}-${nums.slice(5,8)}`;
   };
 
   const handleInputChange = (e) => {
@@ -112,7 +112,7 @@ export default function SearchBox() {
           </div>
           <div>
             <h2 style={styles.resultsTitle}>Endereço Encontrado</h2>
-            <p style={styles.resultsCep}>CEP: {endereco.ceo}</p>
+            <p style={styles.resultsCep}>CEP: {endereco.cep}</p>
           </div>
         </div>
 

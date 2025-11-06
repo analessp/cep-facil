@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Home, Search, History } from 'lucide-react';
-import { styles } from '../styles/styles'
+import { styles } from '../styles/styles';
 
 export default function Navigation() {
   return (

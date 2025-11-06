@@ -1,0 +1,355 @@
+  import { colors, shadows, spacing, borderRadius, fontSize, fontWeight, transitions } from './theme';
+
+  export const styles = {
+
+    navLinkHover: {
+      color: colors.primary,
+      background: colors.bgDark,
+      transform: 'translateY(-2px)',
+    },
+    
+    buttonHover: {
+      background: colors.primaryDark,
+      boxShadow: shadows.buttonHover,
+      transform: 'translateY(-1px)',
+    },
+  
+    homeButtonHover: {
+      background: colors.primaryDark,
+      boxShadow: shadows.buttonHover,
+      transform: 'translateY(-2px)',
+    },
+  
+    clearButtonHover: {
+      background: colors.errorBg,
+      color: colors.errorText,
+      borderColor: colors.errorText,
+    },
+    
+    nav: {
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      right: 0,
+      background: colors.bgNav,
+      backdropFilter: 'blur(10px)',
+      borderBottom: `1px solid ${colors.borderLight}`,
+      zIndex: 1000,
+    },
+    navContent: {
+      maxWidth: '1200px',
+      margin: '0 auto',
+      padding: `${spacing.md} ${spacing.lg}`,
+      display: 'flex',
+      gap: spacing.lg,
+      justifyContent: 'center',
+    },
+    navLink: {
+      color: colors.textLight,
+      textDecoration: 'none',
+      display: 'flex',
+      alignItems: 'center',
+      gap: spacing.xs,
+      padding: `${spacing.xs} ${spacing.md}`,
+      borderRadius: borderRadius.sm,
+      transition: transitions.normal,
+      fontSize: fontSize.base,
+      fontWeight: fontWeight.medium,
+    },
+    
+    page: {
+      minHeight: '100vh',
+      background: colors.bgGradient,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: `100px ${spacing.lg} ${spacing.lg}`,
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    },
+    wrapper: {
+      width: '100%',
+      maxWidth: '700px',
+    },
+    homeContent: {
+      textAlign: 'center',
+      maxWidth: '500px',
+    },
+    logo: {
+      width: '120px',
+      height: '120px',
+      background: colors.primaryDark,
+      borderRadius: borderRadius.full,
+      display: 'inline-flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginBottom: spacing.xl,
+      boxShadow: shadows.primary,
+    },
+    logoSmall: {
+      width: '80px',
+      height: '80px',
+      background: colors.primaryDark,
+      borderRadius: borderRadius.full,
+      display: 'inline-flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginBottom: spacing.lg,
+      boxShadow: shadows.primary,
+    },
+    homeTitle: {
+      fontSize: fontSize['4xl'],
+      fontWeight: fontWeight.bold,
+      color: colors.textLight,
+      margin: `0 0 ${spacing.md} 0`,
+    },
+    homeSubtitle: {
+      color: colors.textLight,
+      fontSize: fontSize.xl,
+      lineHeight: '1.6',
+      margin: `0 0 ${spacing.xl} 0`,
+    },
+    homeButton: {
+      background: colors.primaryDark,
+      color: colors.textWhite,
+      padding: `${spacing.md} ${spacing.xl}`,
+      borderRadius: borderRadius.md,
+      border: 'none',
+      fontSize: fontSize.lg,
+      fontWeight: fontWeight.semibold,
+      cursor: 'pointer',
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: spacing.xs,
+      transition: transitions.normal,
+      boxShadow: shadows.button,
+    },
+    
+    header: {
+      textAlign: 'center',
+      marginBottom: spacing.xxl,
+    },
+    title: {
+      fontSize: fontSize['3xl'],
+      fontWeight: fontWeight.bold,
+      color: colors.primary,
+      margin: `0 0 ${spacing.sm} 0`,
+    },
+    subtitle: {
+      color: colors.textLight,
+      fontSize: fontSize.lg,
+      lineHeight: '1.6',
+      margin: 0,
+    },
+    searchBox: {
+      background: colors.bgCard,
+      backdropFilter: 'blur(10px)',
+      borderRadius: borderRadius.lg,
+      padding: spacing.xl,
+      boxShadow: shadows.card,
+      border: `1px solid ${colors.borderLight}`,
+    },
+    inputGroup: {
+      display: 'flex',
+      gap: spacing.sm,
+      marginBottom: spacing.lg,
+    },
+    input: {
+      flex: '1',
+      background: colors.bgDark,
+      color: colors.textWhite,
+      padding: `${spacing.md} ${spacing.lg}`,
+      borderRadius: borderRadius.md,
+      border: `1px solid ${colors.border}`,
+      fontSize: fontSize.lg,
+      transition: transitions.normal,
+      outline: 'none',
+    },
+    inputFocus: {
+      borderColor: colors.primary,
+      boxShadow: `0 0 0 2px ${colors.primaryLight}`,
+    },
+    button: {
+      background: colors.primaryDark,
+      color: colors.textWhite,
+      padding: `${spacing.md} ${spacing.xl}`,
+      borderRadius: borderRadius.md,
+      border: 'none',
+      fontSize: fontSize.base,
+      fontWeight: fontWeight.semibold,
+      cursor: 'pointer',
+      display: 'flex',
+      alignItems: 'center',
+      gap: spacing.xs,
+      transition: transitions.normal,
+      boxShadow: shadows.button,
+    },
+    buttonDisabled: {
+      background: colors.disabled,
+      cursor: 'not-allowed',
+      boxShadow: 'none',
+    },
+    spinner: {
+      animation: 'spin 1s linear infinite',
+    },
+    
+    error: {
+      background: colors.errorBg,
+      border: `1px solid ${colors.errorBorder}`,
+      borderRadius: borderRadius.md,
+      padding: spacing.md,
+      display: 'flex',
+      alignItems: 'center',
+      gap: spacing.sm,
+      color: colors.errorText,
+    },
+    results: {
+      animation: 'slideIn 0.5s ease-out',
+    },
+    resultsHeader: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: spacing.sm,
+      marginBottom: spacing.lg,
+    },
+    resultsIcon: {
+      width: '48px',
+      height: '48px',
+      background: colors.primaryGlow,
+      borderRadius: borderRadius.full,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    resultsTitle: {
+      color: colors.textWhite,
+      fontSize: fontSize.xl,
+      fontWeight: fontWeight.bold,
+      margin: `0 0 4px 0`,
+    },
+    resultsCep: {
+      color: colors.textMuted,
+      fontSize: fontSize.sm,
+      margin: 0,
+    },
+    infoGrid: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+      gap: spacing.md,
+    },
+    infoCard: {
+      background: colors.bgDarker,
+      borderRadius: borderRadius.md,
+      padding: spacing.lg,
+      border: `1px solid ${colors.borderLight}`,
+    },
+    infoLabel: {
+      color: colors.textMuted,
+      fontSize: fontSize.xs,
+      textTransform: 'uppercase',
+      letterSpacing: '0.05em',
+      margin: `0 0 6px 0`,
+    },
+    infoValue: {
+      color: colors.textWhite,
+      fontSize: fontSize.lg,
+      fontWeight: fontWeight.medium,
+      margin: 0,
+    },
+  
+    emptyState: {
+      textAlign: 'center',
+      padding: '60px 20px',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: spacing.lg,
+    },
+    emptyText: {
+      color: colors.textMuted,
+      fontSize: fontSize.lg,
+      margin: 0,
+    },
+    historicoHeader: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginBottom: spacing.lg,
+      flexWrap: 'wrap',
+      gap: spacing.sm,
+    },
+    historicoCount: {
+      color: colors.textLight,
+      fontSize: fontSize.sm,
+      margin: 0,
+    },
+    clearButton: {
+      background: 'transparent',
+      color: colors.error,
+      border: `1px solid ${colors.error}`,
+      padding: `${spacing.xs} ${spacing.md}`,
+      borderRadius: borderRadius.sm,
+      fontSize: fontSize.sm,
+      cursor: 'pointer',
+      transition: transitions.normal,
+    },
+    historicoList: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: spacing.sm,
+    },
+    historicoItem: {
+      background: colors.bgDarker,
+      borderRadius: borderRadius.md,
+      padding: spacing.md,
+      border: `1px solid ${colors.borderLight}`,
+      display: 'flex',
+      gap: spacing.md,
+      alignItems: 'flex-start',
+    },
+    historicoIcon: {
+      width: '40px',
+      height: '40px',
+      background: colors.primaryLight,
+      borderRadius: borderRadius.full,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexShrink: 0,
+    },
+    historicoInfo: {
+      flex: 1,
+    },
+    historicoCep: {
+      color: colors.primary,
+      fontSize: fontSize.base,
+      fontWeight: fontWeight.semibold,
+      margin: `0 0 4px 0`,
+    },
+    historicoEndereco: {
+      color: colors.textLight,
+      fontSize: fontSize.sm,
+      margin: `0 0 4px 0`,
+    },
+    historicoData: {
+      color: colors.textDark,
+      fontSize: fontSize.xs,
+      margin: 0,
+    },
+  };
+
+const breakpoints = {
+  sm: '640px',
+  md: '768px',
+};
+
+export const navStyles = {
+  // Mobile
+  padding: `${spacing.md} ${spacing.sm}`,
+  justifyContent: 'flex-start',
+  // Desktop/Tablet
+  [`@media (min-width: ${breakpoints.md})`]: {
+    padding: `${spacing.md} ${spacing.lg}`,
+    justifyContent: 'center', 
+  },
+};
+

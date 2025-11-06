@@ -6,7 +6,7 @@ import { styles } from '../styles/styles';
 export default function SearchPage() {
   return (
     <PageLayout>
-      <div style={StyleSheet.header}>
+      <div style={styles.header}>
         <div style={styles.logoSmall}>
           <MapPin size={40} strokeWidth={2.5} color='white' />
         </div>
