@@ -41,7 +41,6 @@ A interface foi projetada com foco em **usabilidade, velocidade e experiência d
 ## 💻 Como usar  
 
 ### 1. Clonar o repositório  
-```bash
 git clone https://github.com/seu-usuario/cep-facil.git
 2. Acessar o diretório do projeto
 cd cep-facil
@@ -54,7 +53,7 @@ O Vite exibirá a URL local, geralmente:
 http://localhost:5173
 
 📂 Estrutura do Projeto
-
+```bash
 cep-facil/
 │
 ├── public/                 
